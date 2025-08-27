@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    .login-container {
+      width: 380px;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 15px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .login-container button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+
+    .login-container .links {
+      margin-top: 15px;
+      font-size: 14px;
+
+    }
+
+    .login-container .links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .login-container .links a:hover {
+      color: #ffe259;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  {% extends 'layout.html' %}
+  {% block content %}
+  <div class="login-container">
+    <h2>Welcome Back 👋</h2>
+    <form>
+      <input type="text" placeholder="Enter Username" required>
+      <input type="password" placeholder="Enter Password" required>
+      <button type="submit"><a href="{% url 'home' %}">Login</button>
+    </form>
+    <div class="links">
+      <a href="#">Forgot Password?</a> | <a href="#">Create Account</a>
+    </div>
+  </div>
+  {% endblock content %}
+</body>
+</html>

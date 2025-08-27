@@ -1,0 +1,142 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .page-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 30px 0;
+      font-weight: bold;
+      color: #333;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .card img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 220px;
+      object-fit: cover;
+    }
+    .price {
+      font-size: 1.2rem;
+      color: #007bff;
+      font-weight: 600;
+    }
+    .btn-buy {
+      border-radius: 30px;
+      padding: 8px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="page-title">Our Products</h1>
+    <div class="row g-4">
+      
+      <!-- Product 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="School Bag">
+          <div class="card-body">
+            <h5 class="card-title">School Bag</h5>
+            <p class="card-text">Durable and lightweight school bag with multiple compartments.</p>
+            <p class="price">$25.99</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Water Bottle">
+          <div class="card-body">
+            <h5 class="card-title">Water Bottle</h5>
+            <p class="card-text">Eco-friendly stainless steel water bottle to keep drinks fresh.</p>
+            <p class="price">$12.49</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1616627458799-7fbcdd5e1776?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Lunch Box">
+          <div class="card-body">
+            <h5 class="card-title">Lunch Box</h5>
+            <p class="card-text">Compact, leak-proof lunch box with stylish design.</p>
+            <p class="price">$15.00</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Notebook">
+          <div class="card-body">
+            <h5 class="card-title">Notebook</h5>
+            <p class="card-text">Premium quality notebook with smooth pages for writing.</p>
+            <p class="price">$6.50</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1606813909367-6d97e6c9e64f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Stationery Set">
+          <div class="card-body">
+            <h5 class="card-title">Stationery Set</h5>
+            <p class="card-text">Complete stationery kit with pens, pencils, and colors.</p>
+            <p class="price">$18.90</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Shoes">
+          <div class="card-body">
+            <h5 class="card-title">Sports Shoes</h5>
+            <p class="card-text">Comfortable, durable sports shoes perfect for school activities.</p>
+            <p class="price">$35.75</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+{% endblock content %}
