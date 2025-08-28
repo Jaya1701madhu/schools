@@ -28,4 +28,5 @@ urlpatterns = [
     path('login/',login,name="login"),
     path('trans/',trans,name="trans"),
     path('profiles/',profiles,name="profiles"),
+    path('aboutus/',aboutus,name="aboutus")
 ]
