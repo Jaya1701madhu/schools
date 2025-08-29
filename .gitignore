@@ -1,4 +1,11 @@
-__pychche
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+venv/
 Lib/
 Scripts/
-venv/
